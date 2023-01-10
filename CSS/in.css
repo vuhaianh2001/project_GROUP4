@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+body{
+    background-image: url();
+    background-size:cover ;
+    background-position-y:-500px;
+    padding: 0;
+    margin: 0;   
+    font-family: 'Unbounded', cursive;
+    font-size: 12px;
+} 
+#logo{
+    margin-left:100px;
+}
+.container{
+    max-width: 1460px;
+    margin: 0px auto;
+}
+#header{
+    background-color:rgb(49, 74, 112);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+#logo{
+    padding: 5px 100px;
+}
+
+#logo img{
+    max-width: 100px;
+    height: auto
+}
+#main-menu{
+    display:flex;
+    list-style:none;
+    margin-right:200px;
+    padding: 0;
+}
+
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    color:#f8f8f8;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color:rgb(49, 74, 112) ;
+    padding: 1px 0px;
+    list-style: none;
+    width: 200px;
+    border:1px solid #807a7a;
+    display: none;
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding:10px 15px;
+    border-bottom:1px solid#807a7a;
+    left: 0;
+}
+#main-menu ul.sub-menu :hover a{
+    border-bottom:1px solid #dacfcf ;
+}
+#main-menu ul.sub-menu li:last-child {
+   border: none;
+}
+#main-menu ul.sub-menu ul.sub-menu{
+    left: 201px;
+    top: -2px;
+}
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content:"";
+    height:2px;
+    width: 0px;
+    background: #f8f8f8;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+   transition:0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+}
+#main-menu>li.has-child::after{
+    font: var(--fa-font-solid);
+    content: "\f107";
+    color: #f8f8f8;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 18px;
+}
+#main-menu .sub-menu li:hover a{
+    color: #f8f8f8;
+}
+#main-menu .sub-menu>li.has-child::after{
+    content:"\f105";
+    font: var(--fa-font-solid);
+    color: #d3abc6;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    padding: 12px 0px;
+}
+#main-menu .sub-menu>li.has-child::after{
+    color: #f8faf4;
+}
+
+.Hang{
+    display:flex;
+    list-style:none;
+    margin-left: 150px;
+    padding: 10px;}
+.Hang li {
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+ }
+ul a.button{
+    color:rgb(49, 74, 112);
+    display: inline-block;
+    font-size: 14px;
+    text-decoration:none ;
+    border-radius: 20px;
+ }
+ #content{
+    width: 1460px;
+    margin: 0px 5px;
+ }
+
+
+
+ 
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+ul.products li{
+    flex-basis: 33%;
+    padding-left:25px ;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+ul.products li img{
+    border-radius: 100%;
+    width: 410px;
+    max-width: 100%;
+    height: auto;
+  
+}
+ .product-top{
+    position:relative;
+    overflow: hidden;
+}    
+
+a.product-thumb{
+    display:block;
+}
+.product-thumb img{
+    display: block;
+}
+
+
+
+.product-info{
+    padding: 20px 0px;
+    
+
+}
+.product-info a{
+    display: block;
+    text-decoration: none;
+}
+
+ a.product-name{
+    color: black;
+    padding: 3px 0px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+.tonglon{
+    display: flex;
+    color: #d69ac3;
+    font-size: 14px;
+ 
+}
+.tong1{
+    display: flex;
+    padding: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.tongnho{
+    margin-top: 30px;
+    display: flex;
+}
+
+.tong2{
+    display: flex;
+    padding: 10px;
+    margin-left: 40px;
+}
+.tongnho1{
+    margin-top: 30px;
+    display: flex;
+    
+}
+.tongnho1 li{
+    display: block;
+    padding:0px 0px;
+    text-decoration: none;}
+.nho1-1{
+    padding: -10px;
+}
+.nho2-2{
+    padding: 10px;
+}
+#header1{
+    background-color:rgb(206, 224, 223);
+}
+
+.box-right a{
+    text-decoration: none}
+.list_chart_music li{
+        list-style: none;}
+.so1{
+    display: flex;
+}
+#InputSearch {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 169px;
+    height:15px ;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    margin-top:10px 
+}
+
+#ulsearch{
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#ulsearch li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    list-style: none;
+}
+
+#ulsearch li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+}
+
+#ulsearch li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+
+
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
